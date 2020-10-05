@@ -14,7 +14,7 @@
   - Illustrator
   - macOS
 - License
-  - [MIT](https://github.com/yumiki06/my-room/LICENSE)
+⭐️追加予定
 - Author
   - [GitHub](https://github.com/yumiki06/)
 
