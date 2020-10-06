@@ -5,6 +5,11 @@ using UnityEngine;
 //矢印をクリックしたら、特定のPanelを表示する
 public class PanelChanger : MonoBehaviour
 {
+    //矢印の表示・非表示
+    public GameObject rightArrow;
+    public GameObject leftArrow;
+    public GameObject backArrow;
+
     string currentPanelStr = "Panel0";
 
     public void OnRightArrow()
