@@ -12,6 +12,12 @@ public class PanelChanger : MonoBehaviour
 
     string currentPanelStr = "Panel0";
 
+    private void Start()
+    {
+        rightArrow.SetActive(true);
+        leftArrow.SetActive(true);
+        backArrow.SetActive(false);
+    }
     public void OnRightArrow()
     {
         //もし現在地がPanel0だったら
