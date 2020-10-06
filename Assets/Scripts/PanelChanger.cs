@@ -18,6 +18,14 @@ public class PanelChanger : MonoBehaviour
         leftArrow.SetActive(true);
         backArrow.SetActive(false);
     }
+
+    void BackArrow()
+    {
+        rightArrow.SetActive(false);
+        leftArrow.SetActive(false);
+        backArrow.SetActive(true);
+    }
+
     public void OnRightArrow()
     {
         //もし現在地がPanel0だったら
