@@ -26,6 +26,16 @@ public class PanelChanger : MonoBehaviour
         backArrow.SetActive(true);
     }
 
+    //使うものを列挙型で定義する
+    enum Panel
+    {
+        Panel0,
+        Panel1,
+        Panel2,
+        Panel3,
+    }
+    Panel currentPanel = Panel.Panel0;
+
     public void OnRightArrow()
     {
         //もし現在地がPanel0だったら
