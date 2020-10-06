@@ -32,4 +32,31 @@ public class PanelChanger : MonoBehaviour
             currentPanelStr = "Panel0";
         }
     }
+
+    public void OnLeftArrow()
+    {
+        //もし現在地がPanel0だったら
+        if (currentPanelStr == "Panel0")
+        {
+            //Panel3を表示する（-1000,0,0）
+            this.transform.localPosition = new Vector2(-3000, 0);
+            currentPanelStr = "Panel3";
+        }
+        else if (currentPanelStr == "Panel3")
+        {
+            this.transform.localPosition = new Vector2(-2000, 0);
+            currentPanelStr = "Panel2";
+        }
+        else if (currentPanelStr == "Panel2")
+        {
+            this.transform.localPosition = new Vector2(-1000, 0);
+            currentPanelStr = "Panel1";
+        }
+        else
+        {
+            this.transform.localPosition = new Vector2(0, 0);
+            currentPanelStr = "Panel0";
+        }
+    }
+
 }
