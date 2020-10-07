@@ -10,8 +10,7 @@ public class PanelChanger : MonoBehaviour
     public GameObject leftArrow;
     public GameObject backArrow;
 
-    string currentPanelStr = "Panel0";
-
+    //矢印の初期値（左右）
     private void Start()
     {
         rightArrow.SetActive(true);
@@ -19,6 +18,7 @@ public class PanelChanger : MonoBehaviour
         backArrow.SetActive(false);
     }
 
+    //詳細画面では戻る矢印のみを表示する
     void BackArrow()
     {
         rightArrow.SetActive(false);
@@ -26,13 +26,12 @@ public class PanelChanger : MonoBehaviour
         backArrow.SetActive(true);
     }
 
-    //使うものを列挙型で定義する
+    //使うパネルを列挙型で定義
     enum Panel
     {
-        Panel0,
-        Panel1,
-        Panel2,
-        Panel3,
+        Panel0, Panel1, Panel2, Panel3,
+        ToolboxPanel,
+        TrashBoxPanel,
     }
     Panel currentPanel = Panel.Panel0;
 
