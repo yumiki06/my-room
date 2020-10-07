@@ -111,4 +111,18 @@ public class PanelChanger : MonoBehaviour
         }
     }
 
+    public void OnToolbox()
+    {
+        //ToolboxPanelを表示する（-2000,1500,0）
+        this.transform.localPosition = new Vector2(-2000,1500);
+        currentPanel = Panel.ToolboxPanel;
+        BackArrow();
+    }
+
+    public void OnTrashBox()
+    {
+        this.transform.localPosition = new Vector2(-3000,1500);
+        currentPanel = Panel.TrashBoxPanel;
+        BackArrow();
+    }
 }
