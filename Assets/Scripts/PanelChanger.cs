@@ -77,4 +77,23 @@ public class PanelChanger : MonoBehaviour
         }
     }
 
+    public void OnLeftArrow()
+    {
+        if (currentPanel == Panel.Panel0)
+        {
+            ShowPanel(Panel.Panel3);
+        }
+        else if (currentPanel == Panel.Panel1)
+        {
+            ShowPanel(Panel.Panel0);
+        }
+        else if (currentPanel == Panel.Panel2)
+        {
+            ShowPanel(Panel.Panel1);
+        }
+        else
+        {
+            ShowPanel(Panel.Panel2);
+        }
+    }
 }
