@@ -96,4 +96,19 @@ public class PanelChanger : MonoBehaviour
             ShowPanel(Panel.Panel2);
         }
     }
+
+    public void OnBackArrow()
+    {
+        Start();
+        //詳細画面の直前にいたPanelを表示する
+        if (currentPanel == Panel.ToolboxPanel)
+        {
+            ShowPanel(Panel.Panel2);
+        }
+        else if (currentPanel == Panel.TrashBoxPanel)
+        {
+            ShowPanel(Panel.Panel3);
+        }
+    }
+
 }
