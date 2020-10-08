@@ -12,4 +12,13 @@ public class Vase : MonoBehaviour
         //ItemBoxにHummerがあるか探し、持っていたら
         bool hasItem = ItemBox.instance.CanUseItem(Item.Type.Hammer);
         if (hasItem == true)
+        {
+            //Vaseが消えて
+            gameObject.SetActive(false);
+            //VaseBrokenが表示される
+            vaseBroken.SetActive(true);
+            //アイテムを使う
+            ItemBox.instance.UseItem(Item.Type.Hammer);
+        }
+    }
 }
