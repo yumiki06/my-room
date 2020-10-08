@@ -6,4 +6,10 @@ using UnityEngine;
 public class Vase : MonoBehaviour
 {    
     public GameObject vaseBroken;
+
+    public void OnThis()
+    {
+        //ItemBoxにHummerがあるか探し、持っていたら
+        bool hasItem = ItemBox.instance.CanUseItem(Item.Type.Hammer);
+        if (hasItem == true)
 }
