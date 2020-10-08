@@ -26,12 +26,12 @@ public class PanelChanger : MonoBehaviour
         backArrow.SetActive(true);
     }
 
-    //使うパネルを列挙型で定義
+    //使うパネルを列挙型で管理
     enum Panel
     {
         Panel0, Panel1, Panel2, Panel3,
-        ToolboxPanel,
-        TrashBoxPanel,
+        TrashBoxPanel, ToolboxPanel, NotePanel, DrawerPanel, DrawerInsidePanel,
+
     }
     Panel currentPanel = Panel.Panel0;
 
