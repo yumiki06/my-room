@@ -18,4 +18,15 @@ public class Item : MonoBehaviour
         RightEye, //Pane2
         LeftEye, Dirt, Match, Paper, //Panel3
     }
+
+    public Type type;
+
+    public void OnThis()
+    {
+        //ItemBoxに格納する
+        ItemBox.instance.SetItem(type);
+        Debug.Log(type+"を取得");
+        //消える
+        gameObject.SetActive(false);
+    }
 }
