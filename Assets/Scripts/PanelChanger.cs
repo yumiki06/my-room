@@ -30,8 +30,8 @@ public class PanelChanger : MonoBehaviour
     enum Panel
     {
         Panel0, Panel1, Panel2, Panel3,
+        CandlePanel,
         TrashBoxPanel, ToolboxPanel, NotePanel, DrawerPanel, DrawerInsidePanel,
-
     }
     Panel currentPanel = Panel.Panel0;
 
