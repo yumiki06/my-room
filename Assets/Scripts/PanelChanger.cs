@@ -113,6 +113,18 @@ public class PanelChanger : MonoBehaviour
         {
             ShowPanel(Panel.Panel3);
         }
+        else if (currentPanel == Panel.NotePanel)
+        {
+            ShowPanel(Panel.Panel3);
+        }
+        else if (currentPanel == Panel.DrawerPanel)
+        {
+            ShowPanel(Panel.Panel3);
+        }
+        else if (currentPanel == Panel.DrawerInsidePanel)
+        {
+            ShowPanel(Panel.Panel3);
+        }
     }
 
     public void OnToolbox()
