@@ -127,18 +127,42 @@ public class PanelChanger : MonoBehaviour
         }
     }
 
+
+    public void OnCandle()
+    {
+        this.transform.localPosition = new Vector2(0, 1500);
+        currentPanel = Panel.CandlePanel;
+        BackArrow();
+    }
     public void OnToolbox()
     {
-        //ToolboxPanelを表示する（-2000,1500,0）
-        this.transform.localPosition = new Vector2(-2000,1500);
+        this.transform.localPosition = new Vector2(-2000, 1500);
         currentPanel = Panel.ToolboxPanel;
         BackArrow();
     }
-
     public void OnTrashBox()
     {
-        this.transform.localPosition = new Vector2(-3000,1500);
+        this.transform.localPosition = new Vector2(-3000, 1500);
         currentPanel = Panel.TrashBoxPanel;
         BackArrow();
     }
+    public void OnNote()
+    {
+        this.transform.localPosition = new Vector2(-3000, 3000);
+        currentPanel = Panel.NotePanel;
+        BackArrow();
+    }
+    public void OnDrawer()
+    {
+        this.transform.localPosition = new Vector2(-3000, 4500);
+        currentPanel = Panel.DrawerPanel;
+        BackArrow();
+    }
+    public void OnDrawerOpen()
+    {
+        this.transform.localPosition = new Vector2(-3000, 6000);
+        currentPanel = Panel.DrawerInsidePanel;
+        BackArrow();
+    }
+
 }
