@@ -101,7 +101,11 @@ public class PanelChanger : MonoBehaviour
     {
         Start();
         //詳細画面の直前にいたPanelを表示する
-        if (currentPanel == Panel.ToolboxPanel)
+        if (currentPanel == Panel.CandlePanel)
+        {
+            ShowPanel(Panel.Panel0);
+        }
+        else if (currentPanel == Panel.ToolboxPanel)
         {
             ShowPanel(Panel.Panel2);
         }
