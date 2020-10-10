@@ -28,7 +28,7 @@
 - Points
   - ナゾは全て自分で考えたオリジナルのものです。
   - イラストは全て自分でデザインしたものです。
-   - aaaaaaaaaaaa
+    - aaaaaaaaaaaa
   - Verbalな説明は排除し、国籍に関係なく遊べるようにしました。
 - Planning to...(Task, Hope)
   - アイテム合成機能の実装
