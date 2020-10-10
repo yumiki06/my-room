@@ -1,5 +1,5 @@
-# MY ROOM (Room Escape Game)
-- DEMO
+## MY ROOM (Room Escape Game)
+# DEMO
 ⭐️ 追加予定
 - What
   - シンプルな2D脱出ゲームです。
