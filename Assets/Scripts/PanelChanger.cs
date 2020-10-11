@@ -127,7 +127,6 @@ public class PanelChanger : MonoBehaviour
         }
     }
 
-
     public void OnCandle()
     {
         this.transform.localPosition = new Vector2(0, 1500);
@@ -144,6 +143,13 @@ public class PanelChanger : MonoBehaviour
     public void OnToolboxOpen()
     {
         this.transform.localPosition = new Vector2(-2000, 3000);
+        currentPanel = Panel.ToolboxPanel;
+        BackArrow();
+    }
+
+    public void OnArt()
+    {
+        this.transform.localPosition = new Vector2(-2000, 4500);
         currentPanel = Panel.ToolboxPanel;
         BackArrow();
     }
