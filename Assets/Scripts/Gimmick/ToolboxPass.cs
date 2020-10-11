@@ -30,3 +30,10 @@ public class ToolboxPass : MonoBehaviour
         {
             inputPassword += text.text;
         }
+    
+        if (correctPassword == inputPassword)
+        {
+            Debug.Log("Correct");
+        }
+    }
+}
