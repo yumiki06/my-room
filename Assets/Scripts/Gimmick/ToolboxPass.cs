@@ -31,10 +31,8 @@ public class ToolboxPass : MonoBehaviour
         if (correctPassword == inputPassword)
         {
             OpenAction.Invoke();
-            // 正解後はボタンを非表示にする
-            gameObject.SetActive(false);
         }
     }
-    // 外部から淑徳下関数を実行する
+    // 外部から取得した関数を実行する
     public UnityEvent OpenAction;
 }
