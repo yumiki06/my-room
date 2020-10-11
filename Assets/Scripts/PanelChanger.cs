@@ -140,6 +140,14 @@ public class PanelChanger : MonoBehaviour
         currentPanel = Panel.ToolboxPanel;
         BackArrow();
     }
+
+    public void OnToolboxOpen()
+    {
+        this.transform.localPosition = new Vector2(-2000, 3000);
+        currentPanel = Panel.ToolboxPanel;
+        BackArrow();
+    }
+
     public void OnTrashBox()
     {
         this.transform.localPosition = new Vector2(-3000, 1500);
