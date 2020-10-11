@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 // 数字をクリックすると1ずつ数字が増える
 // 4桁の数字が正解なら、箱が開く
 public class ToolboxPass : MonoBehaviour
 {
     public Text[] texts;
-    
     public void ChangeText(int n)
     {
         // n番目のボタンの数字が1ずつ増える
@@ -30,10 +28,13 @@ public class ToolboxPass : MonoBehaviour
         {
             inputPassword += text.text;
         }
-    
         if (correctPassword == inputPassword)
         {
-            Debug.Log("Correct");
+            OpenAction.Invoke();
+            // 正解後はボタンを非表示にする
+            gameObject.SetActive(false);
         }
     }
+    // 外部から淑徳下関数を実行する
+    public UnityEvent OpenAction;
 }
