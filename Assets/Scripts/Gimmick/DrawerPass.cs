@@ -18,3 +18,14 @@ public class DrawerPass : MonoBehaviour
             nums[n] = 0;
         }
         texts[n].text = chars[nums[n]].ToString();
+        CheckPassword();
+    }
+
+    public void CheckPassword() 
+    {
+        string correctPassword = "TEA";
+        string inputPassword = "";
+        foreach(Text text in texts)
+        {
+            inputPassword += text.text;
+        }
