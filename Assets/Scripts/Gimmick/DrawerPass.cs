@@ -29,3 +29,11 @@ public class DrawerPass : MonoBehaviour
         {
             inputPassword += text.text;
         }
+        if (correctPassword == inputPassword)
+        {
+            OpenAction.Invoke();
+        }
+    }
+    // 外部から取得した関数を実行する
+    public UnityEvent OpenAction;
+}
