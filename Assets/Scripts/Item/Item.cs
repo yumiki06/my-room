@@ -41,4 +41,15 @@ public class Item : MonoBehaviour
             selected.SetActive(true);
         }
     }
+
+    public virtual void UseItem(bool active)
+    {
+        if(selected.activeSelf)
+        {
+            target.SetActive(active);
+            used = true;
+            selected.SetActive(false);
+            image.color = new Color(1.0f,1.0f,1.0f,0.4f);
+        }
+    }
 }
