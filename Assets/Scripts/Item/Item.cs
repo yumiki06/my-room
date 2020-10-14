@@ -15,7 +15,6 @@ public class Item : MonoBehaviour
 
     public Type type;
 
-    public void OnThis()
     public GameObject itemOnPanel;
     public GameObject itemOnBox;
     public GameObject selected;
@@ -26,11 +25,16 @@ public class Item : MonoBehaviour
         itemOnBox.SetActive(true);
     }
 
+    public void SelectItem()
     {
-        //ItemBoxに格納する
-        ItemBox.instance.SetItem(type);
-        Debug.Log(type+"を取得");
-        //消える
-        gameObject.SetActive(false);
+        if(itemOnBox.activeSelf)
+        {
+            GameObject[] selects = GameObject.FindGameObjectsWithTag("Selected");
+            foreach(GameObject select in selects)
+            {
+                select.SetActive(false);
+            }
+        }
+        selected.SetActive(true);
     }
 }
