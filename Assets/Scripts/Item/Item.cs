@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //アイテムをクリックすると、ItemBoxに格納され、最初の場所から消える
 public class Item : MonoBehaviour
@@ -18,6 +19,7 @@ public class Item : MonoBehaviour
     public GameObject itemOnPanel;
     public GameObject itemOnBox;
     public GameObject selected;
+    public Image image;
 
     public void GetItem()
     {
