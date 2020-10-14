@@ -6,16 +6,6 @@ using UnityEngine.UI;
 //アイテムをクリックすると、ItemBoxに格納され、最初の場所から消える
 public class Item : MonoBehaviour
 {
-    //アイテムを列挙型で管理
-    public enum Type
-    {
-        Hammer, Rubber, CatFood, Screwdriver, //Panel1
-        SilverKey, GoldKey, RightEye, //Panel2
-        LeftEye, Match, Paper, //Panel3
-    }
-
-    public Type type;
-
     public GameObject itemOnPanel;
     public GameObject itemOnBox;
     public GameObject selected;
