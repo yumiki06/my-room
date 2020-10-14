@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     public GameObject itemOnBox;
     public GameObject selected;
     public Image image;
+    private bool used = false;
 
     public void GetItem()
     {
@@ -23,7 +24,7 @@ public class Item : MonoBehaviour
         {
             selected.SetActive(true);
         }
-        else if(itemOnBox.activeSelf)
+        else if(itemOnBox.activeSelf && !used)
         {
             GameObject[] selects = GameObject.FindGameObjectsWithTag("Selected");
             foreach(GameObject select in selects)
