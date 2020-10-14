@@ -9,6 +9,7 @@ public class Item : MonoBehaviour
     public GameObject itemOnPanel;
     public GameObject itemOnBox;
     public GameObject selected;
+    public GameObject target;
     public Image image;
     private bool used = false;
 
