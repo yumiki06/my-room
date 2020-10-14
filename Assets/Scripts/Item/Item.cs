@@ -19,6 +19,13 @@ public class Item : MonoBehaviour
     public GameObject itemOnPanel;
     public GameObject itemOnBox;
     public GameObject selected;
+
+    public void GetItem()
+    {
+        itemOnPanel.SetActive(false);
+        itemOnBox.SetActive(true);
+    }
+
     {
         //ItemBoxに格納する
         ItemBox.instance.SetItem(type);
