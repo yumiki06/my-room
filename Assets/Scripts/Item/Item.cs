@@ -27,14 +27,18 @@ public class Item : MonoBehaviour
 
     public void SelectItem()
     {
-        if(itemOnBox.activeSelf)
+        if(selected.activeSelf)
+        {
+            selected.SetActive(true);
+        }
+        else if(itemOnBox.activeSelf)
         {
             GameObject[] selects = GameObject.FindGameObjectsWithTag("Selected");
             foreach(GameObject select in selects)
             {
                 select.SetActive(false);
             }
+            selected.SetActive(true);
         }
-        selected.SetActive(true);
     }
 }
