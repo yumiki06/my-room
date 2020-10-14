@@ -16,6 +16,9 @@ public class Item : MonoBehaviour
     public Type type;
 
     public void OnThis()
+    public GameObject itemOnPanel;
+    public GameObject itemOnBox;
+    public GameObject selected;
     {
         //ItemBoxに格納する
         ItemBox.instance.SetItem(type);
