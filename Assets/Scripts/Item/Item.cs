@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 //アイテムをクリックすると、ItemBoxに格納され、最初の場所から消える
 public class Item : MonoBehaviour
@@ -11,6 +12,7 @@ public class Item : MonoBehaviour
     public GameObject selected;
     public GameObject target;
     public Image image;
+    public UnityEvent soundAction;
     private bool used = false;
 
     public void GetItem()
@@ -44,6 +46,8 @@ public class Item : MonoBehaviour
             used = true;
             selected.SetActive(false);
             image.color = new Color(1.0f,1.0f,1.0f,0.4f);
+            // 音が鳴る
+            soundAction.Invoke();
         }
     }
 }
