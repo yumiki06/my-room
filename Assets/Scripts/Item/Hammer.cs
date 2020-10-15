@@ -1,20 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Hammer : Item
 {
-    public GameObject vaseBroken;
-    public UnityEvent usedAction;
-
+    public GameObject action;
     public override void UseItem(bool active)
     {
+        if(selected.activeSelf)
         {
             // VaseBrokenが表示される
-            vaseBroken.SetActive(true);
-            // 音が鳴る
-            usedAction.Invoke();
+            action.SetActive(true);
             base.UseItem(active);
         }
     }
