@@ -31,7 +31,9 @@ public class PanelChanger : MonoBehaviour
     {
         Panel0, Panel1, Panel2, Panel3,
         CandlePanel,
-        TrashBoxPanel, ToolboxPanel, NotePanel, DrawerPanel, DrawerInsidePanel,
+        SafePanel,
+        ToolboxPanel, ToolboxOpenPanel, ArtPanel,
+        TrashBoxPanel, NotePanel, DrawerPassPanel, DrawerOpenPanel0, DrawerOpenPanel1, DrawerOpenPanel2,
     }
     Panel currentPanel = Panel.Panel0;
 
@@ -105,6 +107,10 @@ public class PanelChanger : MonoBehaviour
         {
             ShowPanel(Panel.Panel0);
         }
+        else if (currentPanel == Panel.ArtPanel)
+        {
+            ShowPanel(Panel.Panel2);
+        }
         else if (currentPanel == Panel.ToolboxPanel)
         {
             ShowPanel(Panel.Panel2);
@@ -117,11 +123,11 @@ public class PanelChanger : MonoBehaviour
         {
             ShowPanel(Panel.Panel3);
         }
-        else if (currentPanel == Panel.DrawerPanel)
+        else if (currentPanel == Panel.DrawerPassPanel)
         {
             ShowPanel(Panel.Panel3);
         }
-        else if (currentPanel == Panel.DrawerInsidePanel)
+        else if (currentPanel == Panel.DrawerOpenPanel0)
         {
             ShowPanel(Panel.Panel3);
         }
@@ -150,7 +156,7 @@ public class PanelChanger : MonoBehaviour
     public void OnArt()
     {
         this.transform.localPosition = new Vector2(-2000, 4500);
-        currentPanel = Panel.ToolboxPanel;
+        currentPanel = Panel.ArtPanel;
         BackArrow();
     }
 
@@ -166,17 +172,28 @@ public class PanelChanger : MonoBehaviour
         currentPanel = Panel.NotePanel;
         BackArrow();
     }
-    public void OnDrawer()
+    public void OnDrawerPass()
     {
         this.transform.localPosition = new Vector2(-3000, 4500);
-        currentPanel = Panel.DrawerPanel;
+        currentPanel = Panel.DrawerPassPanel;
         BackArrow();
     }
-    public void OnDrawerOpen()
+    public void OnDrawerOpen0()
     {
         this.transform.localPosition = new Vector2(-3000, 6000);
-        currentPanel = Panel.DrawerInsidePanel;
+        currentPanel = Panel.DrawerOpenPanel0;
         BackArrow();
     }
-
+    public void OnDrawerOpen1()
+    {
+        this.transform.localPosition = new Vector2(-3000, 7500);
+        currentPanel = Panel.DrawerOpenPanel0;
+        BackArrow();
+    }
+    public void OnDrawerOpen2()
+    {
+        this.transform.localPosition = new Vector2(-3000, 9000);
+        currentPanel = Panel.DrawerOpenPanel0;
+        BackArrow();
+    }
 }
