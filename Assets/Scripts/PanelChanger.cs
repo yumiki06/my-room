@@ -139,6 +139,12 @@ public class PanelChanger : MonoBehaviour
         currentPanel = Panel.CandlePanel;
         BackArrow();
     }
+    public void OnSafeOpen()
+    {
+        this.transform.localPosition = new Vector2(-1000, 1500);
+        currentPanel = Panel.SafePanel;
+        BackArrow();
+    }
     public void OnToolbox()
     {
         this.transform.localPosition = new Vector2(-2000, 1500);
