@@ -31,7 +31,6 @@ public class PanelChanger : MonoBehaviour
     {
         Panel0, Panel1, Panel2, Panel3,
         CandlePanel,
-        SafePanel,
         ToolboxPanel, ToolboxOpenPanel, ArtPanel,
         TrashBoxPanel, NotePanel, DrawerPassPanel, DrawerOpenPanel0, DrawerOpenPanel1, DrawerOpenPanel2,
     }
@@ -139,19 +138,12 @@ public class PanelChanger : MonoBehaviour
         currentPanel = Panel.CandlePanel;
         BackArrow();
     }
-    public void OnSafeOpen()
-    {
-        this.transform.localPosition = new Vector2(-1000, 1500);
-        currentPanel = Panel.SafePanel;
-        BackArrow();
-    }
     public void OnToolbox()
     {
         this.transform.localPosition = new Vector2(-2000, 1500);
         currentPanel = Panel.ToolboxPanel;
         BackArrow();
     }
-
     public void OnToolboxOpen()
     {
         this.transform.localPosition = new Vector2(-2000, 3000);
