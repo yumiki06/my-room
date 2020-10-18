@@ -21,6 +21,7 @@ public class DrawerPass : MonoBehaviour
         CheckPassword();
     }
 
+    public UnityEvent soundAction;
     public void CheckPassword() 
     {
         string correctPassword = "TEA";
@@ -31,6 +32,7 @@ public class DrawerPass : MonoBehaviour
         }
         if (correctPassword == inputPassword)
         {
+            soundAction.Invoke();
             OpenAction.Invoke();
         }
     }
