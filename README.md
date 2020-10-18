@@ -18,7 +18,7 @@
 ## Author
 - [GitHub](https://github.com/yumiki06/)
 
----
+----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------
 
 ## Why
 - 子供の頃にゲームが大好きで、ずっと自分で作ってみたいと思っていた為開発を決めました。
