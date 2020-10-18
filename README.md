@@ -7,8 +7,9 @@
 - クリアの想定所要時間は5分です。
 ## How to play
 - 色々な場所を調べてナゾを解き、部屋から脱出できればゲームクリアとなります。
+- コレクト画面のアイテムを選択した状態で、任意のオブジェクトをクリックすると、アイテムを使用することができます。
 ## Production Environment
-⭐️追加予定(デプロイ先　テストアカウント＆ID)
+https://unityroom.com/games/my-room
 ## Development Environment
 - C#
 - Unity
@@ -18,7 +19,9 @@
 ## Author
 - [GitHub](https://github.com/yumiki06/)
 
+
 ----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------<img src="Assets/Images/my-room3.png" width="20px">----------<img src="Assets/Images/my-room.png" width="20px">----------
+
 
 ## Why
 - 子供の頃にゲームが大好きで、ずっと自分で作ってみたいと思っていた為開発を決めました。
