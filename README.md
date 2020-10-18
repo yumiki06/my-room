@@ -1,6 +1,7 @@
 # MY ROOM (Room Escape Game)
 ## DEMO
-⭐️ 追加予定
+![movePanels](Assets/ForReadMe/movePanels.gif "movePanels")　　　<img src="Assets/ForReadMe/howToUseItems.png" width="240px">　　　<img src="Assets/ForReadMe/changePassword.png" width="240px">
+
 ## What
 - シンプルな2D脱出ゲームです。
 - クリアの想定所要時間は5分です。
@@ -14,8 +15,6 @@
 - Illustrator
 - Visual Studio Code
 - macOS
-## License
-⭐️追加予定
 ## Author
 - [GitHub](https://github.com/yumiki06/)
 
@@ -37,7 +36,7 @@
   - クラスの継承を使用し、同一の記述を何度もすることを避けました。
 - アイテムコレクト画面（UI）について
   - フラグ管理により、一度使用したアイテムは選択不可にしました。
-## Planning to...(Task, Hope)
+## Hoping to...
 - アイテム合成機能の実装
 - ヒント機能の実装
 - オートセーブ機能の実装
