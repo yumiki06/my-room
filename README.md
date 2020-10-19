@@ -1,6 +1,6 @@
 # MY ROOM (Room Escape Game)
 ## DEMO
-![movePanels](Assets/ForReadMe/movePanels.gif "movePanels")　　　<img src="Assets/ForReadMe/howToUseItems.png" width="240px">　　　<img src="Assets/ForReadMe/changePassword.png" width="240px">
+<img src="Assets/ForReadMe/movePanels.gif" width="200px">　　<img src="Assets/ForReadMe/howToUseItems.png" width="200px">　　<img src="Assets/ForReadMe/changePassword.png" width="200px">　　<img src="Assets/ForReadMe/ComprehensiveDesign.jpg" width="200px">
 
 ## What
 - シンプルな2D脱出ゲームです。
