@@ -8,7 +8,7 @@
 ## How to play
 - 色々な場所を調べてナゾを解き、部屋から脱出できればゲームクリアとなります。
 - コレクト画面のアイテムを選択した状態で、任意のオブジェクトをクリックすると、アイテムを使用することができます。
-## Production Environment
+## App URL
 https://unityroom.com/games/my-room
 ## Development Environment
 - C#
