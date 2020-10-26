@@ -23,13 +23,14 @@ https://unityroom.com/games/my-room
 
 
 ## Why
+- Ruby on Rails 以外での開発に挑戦したかった為です。
 - 子供の頃にゲームが好きで自分で作ってみたいと思っていた為開発を決めました。
 - 脱出ゲームは同じ動作の繰り返しが多い為、短期間での開発が可能だと考えました。
-- 高難易度のものが増えている為、通勤時間等に気軽に遊べる難易度のものがあればいいな、という思いで開発しました。
+- 通勤時間等に気軽に遊べる難易度のものがあればいいな、という思いで開発しました。
 ## Development Period
 - 企画→1週間
 - デザイン→1週間
-- 開発→3週間
+- コーディング、ビルド→3週間
 ## Design
 <img src="Assets/ForReadMe/Picture1.png" width="400px">　<img src="Assets/ForReadMe/IMG_2439-1.jpg" width="200px"><img src="Assets/ForReadMe/IMG_2440-1.jpg" width="200px">
 
