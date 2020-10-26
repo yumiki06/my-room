@@ -30,7 +30,7 @@ https://unityroom.com/games/my-room
 ## Development Period
 - 企画→1週間
 - デザイン→1週間
-- コーディング、ビルド→3週間
+- コーディング→3週間
 ## Design
 <img src="Assets/ForReadMe/Picture1.png" width="400px">　<img src="Assets/ForReadMe/IMG_2439-1.jpg" width="200px"><img src="Assets/ForReadMe/IMG_2440-1.jpg" width="200px">
 
